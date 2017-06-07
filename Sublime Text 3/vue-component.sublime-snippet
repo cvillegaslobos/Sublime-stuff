@@ -1,0 +1,51 @@
+<snippet>
+	<content><![CDATA[
+<template>
+	<div>
+		<!-- Acá va el código HTML
+			Debe existir solo un hijo en la raiz, por eso el div 
+		-->
+	</div>
+</template>
+
+<!-- Acá va el código Js/ES6 -->
+<script>
+	
+	export default {
+
+		/* On mounted, inicializacion de variables */
+		mounted(){
+
+		},
+
+		/* Parametros recibidos */
+		props: [],
+
+		/* Variables de componente */
+		data(){
+			return {				 
+				
+			}
+		},
+
+		/* Metodos */
+		methods:{
+			
+		}
+
+	}
+
+</script>
+
+<!-- y acá va el CSS  
+"scoped" sirve para que todas las reglas ingresadas solo se apliquen a 
+los elementos del dom del componente, no el global 
+-->
+
+<style scoped>
+
+</style>
+]]></content>
+	<tabTrigger>vuecomponent</tabTrigger>
+	<description>Plantilla para componente de Vue</description>
+</snippet>
