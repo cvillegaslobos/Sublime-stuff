@@ -2,10 +2,12 @@
 
 Instalación de snippets de Sublime Text 3:
 
-Windows
+Windows:
+
 Copiar archivo en C:\Users\<User>\AppData\Roaming\Sublime Text 3\Packages\User
 
 Uso:
+
 Escribir el [tag] y aparecerá en el menu desplegable, presionar tab o enter para insertar.
 
 | Snippet  | Tag |
