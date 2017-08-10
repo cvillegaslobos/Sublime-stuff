@@ -1,4 +1,4 @@
-# vue-stuff
+# Sublime-stuff
 
 Instalación de snippets de Sublime Text 3:
 
