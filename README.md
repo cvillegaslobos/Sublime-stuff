@@ -14,4 +14,5 @@ Escribir el [tag] y aparecerá en el menu desplegable, presionar tab o enter par
 | ------------- | ------------- |
 | vue-app.sublime.snippet  | vueapp  |
 | vue-component.sublime.snippet  | vuecomponent  |
+| laravel-controller-crud.sublime.snippet  | crud  (solo en archivos .php)|
 
