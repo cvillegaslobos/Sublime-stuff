@@ -1,0 +1,78 @@
+<snippet>
+    <content><![CDATA[
+/** 
+ * Retorna todos los elementos del modelo
+ * @method index
+ * @return Arreglo con todos los elementos del modelo
+ */
+public function index(){
+    return Model::all();
+}
+
+/**
+ * Muestra modelo consultado
+ * @method show
+ * @param  Model  \$model Modelo encontrado
+ * @return Model         Modelo encontrado
+ */
+public function show(Model \$model){
+    return \$model;
+}
+
+/**
+ * Retorna vista de creación de modelo
+ * @method create
+ * @return View vista de creación
+ */
+public function create(){
+    return view('create');
+}   
+
+/**
+ * Retorna vista de edición de modelo
+ * @method edit
+ * @param  Model  \$model Vista de edición
+ * @return View          Vista de edición
+ */
+public function edit(Model \$model){
+    return view('edit', compact('model'));
+}
+
+/**
+ * Guarda modelo
+ * @method store
+ * @param  Request \$request Parámetros de solicitud
+ * @return HTTP request response           
+ */
+public function store(Request \$request){
+    \$data = \$request->input();
+
+    Model::create(\$data);
+}   
+
+/**
+ * Actualiza modelo
+ * @method update
+ * @param  Request \$request Parámetros de solicitud
+ * @param  Model   \$model   Modelo a actualizar
+ * @return HTTP request response
+ */
+public function update(Request \$request, Model \$model){
+    \$data = \$request->input();
+
+    \$model->update(\$data);
+}
+
+/**
+ * Elimina modelo
+ * @method delete
+ * @param  Model  \$model Modelo a eliminar
+ * @return HTTP request response
+ */
+public function delete(Model \$model){
+    \$model->delete();
+}
+]]></content>    
+    <tabTrigger>crud</tabTrigger>    
+    <scope>source.php</scope>
+</snippet>
