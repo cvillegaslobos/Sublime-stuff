@@ -1,18 +1,18 @@
 # Sublime-stuff
 
-Instalación de snippets de Sublime Text 3:
+Snippet install
 
 Windows:
 
-Copiar archivo en C:\Users\<User>\AppData\Roaming\Sublime Text 3\Packages\User
+Copy files to C:\Users\<User>\AppData\Roaming\Sublime Text 3\Packages\User
 
-Uso:
+Use:
 
-Escribir el [tag] y aparecerá en el menu desplegable, presionar tab o enter para insertar.
+Write the [Tag] and select it
 
-| Snippet  | Tag |
+| Snippet  | Tag | Description |
 | ------------- | ------------- |
-| vue-app.sublime-snippet  | vueapp  |
-| vue-component.sublime-snippet  | vuecomponent  |
-| laravel-controller-crud.sublime-snippet  | crud  (solo en archivos .php)|
+| vue-app.sublime-snippet  | vueapp  | Structure for basic Vue app |
+| vue-component.sublime-snippet  | vuecomponent  | Structure for basic Vue component |
+| laravel-controller-crud.sublime-snippet  | crud | Structure for crud methods on Laravel Controller (Works only on .php files) |
 
