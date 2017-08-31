@@ -1,47 +1,47 @@
 <snippet>
     <content><![CDATA[
 /** 
- * Retorna todos los elementos del modelo
+ * Return all elements from <Model>
  * @method index
- * @return Arreglo con todos los elementos del modelo
+ * @return Array<Model> 
  */
 public function index(){
     return Model::all();
 }
 
 /**
- * Muestra modelo consultado
+ * Returns searched <Model>
  * @method show
- * @param  Model  \$model Modelo encontrado
- * @return Model         Modelo encontrado
+ * @param  Model  \$model <Model> found
+ * @return <Model>
  */
 public function show(Model \$model){
     return \$model;
 }
 
 /**
- * Retorna vista de creación de modelo
+ * Returns the "create" view for <Model>
  * @method create
- * @return View vista de creación
+ * @return View 
  */
 public function create(){
     return view('create');
 }   
 
 /**
- * Retorna vista de edición de modelo
+ * Returns the "edit" view for <Model>
  * @method edit
- * @param  Model  \$model Vista de edición
- * @return View          Vista de edición
+ * @param  Model  \$model <Model> found
+ * @return View
  */
 public function edit(Model \$model){
     return view('edit', compact('model'));
 }
 
 /**
- * Guarda modelo
+ * Save <Model>
  * @method store
- * @param  Request \$request Parámetros de solicitud
+ * @param  Request \$request Request params
  * @return HTTP request response           
  */
 public function store(Request \$request){
@@ -51,10 +51,10 @@ public function store(Request \$request){
 }   
 
 /**
- * Actualiza modelo
+ * Updates <Model>
  * @method update
- * @param  Request \$request Parámetros de solicitud
- * @param  Model   \$model   Modelo a actualizar
+ * @param  Request \$request Request params
+ * @param  Model   \$model   <Model>
  * @return HTTP request response
  */
 public function update(Request \$request, Model \$model){
@@ -64,9 +64,9 @@ public function update(Request \$request, Model \$model){
 }
 
 /**
- * Elimina modelo
+ * Deletes <Model>
  * @method delete
- * @param  Model  \$model Modelo a eliminar
+ * @param  Model  \$model <Model> to delete
  * @return HTTP request response
  */
 public function delete(Model \$model){
