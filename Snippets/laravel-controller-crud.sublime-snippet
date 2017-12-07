@@ -1,75 +1,75 @@
 <snippet>
     <content><![CDATA[
 /** 
- * Return all elements from <Model>
+ * Retorna todos los elementos del modelo
  * @method index
- * @return Array<Model> 
+ * @return Arreglo con todos los elementos del modelo
  */
 public function index(){
-    return Model::all();
+    return [Model]::all();
 }
 
 /**
- * Returns searched <Model>
+ * Muestra modelo consultado
  * @method show
- * @param  Model  \$model <Model> found
- * @return <Model>
+ * @param  [Model]  \$model Modelo encontrado
+ * @return [Model]         Modelo encontrado
  */
-public function show(Model \$model){
+public function show([Model] \$model){
     return \$model;
 }
 
 /**
- * Returns the "create" view for <Model>
+ * Retorna vista de creación de modelo
  * @method create
- * @return View 
+ * @return View vista de creación
  */
 public function create(){
     return view('create');
 }   
 
 /**
- * Returns the "edit" view for <Model>
+ * Retorna vista de edición de modelo
  * @method edit
- * @param  Model  \$model <Model> found
- * @return View
+ * @param  [Model]  \$model Vista de edición
+ * @return View          Vista de edición
  */
-public function edit(Model \$model){
+public function edit([Model] \$model){
     return view('edit', compact('model'));
 }
 
 /**
- * Save <Model>
+ * Guarda modelo
  * @method store
- * @param  Request \$request Request params
+ * @param  Request \$request Parámetros de solicitud
  * @return HTTP request response           
  */
 public function store(Request \$request){
     \$data = \$request->input();
 
-    Model::create(\$data);
+    [Model]::create(\$data);
 }   
 
 /**
- * Updates <Model>
+ * Actualiza modelo
  * @method update
- * @param  Request \$request Request params
- * @param  Model   \$model   <Model>
+ * @param  Request \$request Parámetros de solicitud
+ * @param  [Model]   \$model   Modelo a actualizar
  * @return HTTP request response
  */
-public function update(Request \$request, Model \$model){
+public function update(Request \$request, [Model] \$model){
     \$data = \$request->input();
 
     \$model->update(\$data);
 }
 
 /**
- * Deletes <Model>
+ * Elimina modelo
  * @method delete
- * @param  Model  \$model <Model> to delete
+ * @param  [Model]  \$model Modelo a eliminar
  * @return HTTP request response
  */
-public function delete(Model \$model){
+public function destroy([Model] \$model){
     \$model->delete();
 }
 ]]></content>    
