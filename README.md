@@ -4,7 +4,7 @@ Snippet install
 
 Windows:
 
-Copy files to C:\Users\\<User>\AppData\Roaming\Sublime Text 3\Packages\User
+Copy files to C:/Users/[User]/AppData/Roaming/Sublime Text 3/Packages/User
 
 Use:
 
